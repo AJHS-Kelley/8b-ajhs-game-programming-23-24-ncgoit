@@ -65,7 +65,7 @@ while playerScore != 3 or cpuScore != 3:
     for numGuesses in range(4):
         playerGuess = int(input("Think of your number, type it in and then push ENTER.\n"))
         print(f"You have picked{playerGuess}. Let's see if it is a match!\n")
-<<<<<<< Updated upstream
+
     # YOUR CODE IS NOT INDICATING IF GUESS IS TOO HIGH / TOO LOW. 
     # CORRECT GUESS IS NOT WORKING EITHER.  SEE SCREENSHOT. 
     if playerGuess == secretNumber:
@@ -73,38 +73,38 @@ while playerScore != 3 or cpuScore != 3:
         print("A winner is you! It's a match!\n")
         break # immediately exit a loop!
     else:
-=======
+
         if playerGuess == secretNumber:
             playerScore += 1
             print("A winner is you! It's a match!\n")
 
->>>>>>> Stashed changes
+
         if playerGuess < secretNumber:
             print("Your guess is too low!\n")
         else:
             print("Your guess is too high!\n")
-<<<<<<< Updated upstream
+
     # NUMBER OF GUESSES REMAINING IS NOT UPDATING AFTER EACH GUESS. 
     numGuesses += 1
-if playerGuess != secretNumber:
-    cpuScore += 1
-    print("You have won three rounds, so you win the game!\n")
-else:
-    print("Git gud scrub,  the CPU was able to smash you!\n")
-=======
+    if playerGuess != secretNumber:
+        cpuScore += 1
+        print("You have won three rounds, so you win the game!\n")
+    else:
+        print("Git gud scrub,  the CPU was able to smash you!\n")
 
-        print(f"You have {numGuesses - numAttempts} guesses left this round!\n")   
-        if playerGuess != secretNumber:
-            print("Git gud scrub,  the CPU was able to smash you!\n")
-        else:
-            print("You have won three rounds, so you win the game!\n")
+print(f"You have {numGuesses - numAttempts} guesses left this round!\n")   
+    
+if playerGuess != secretNumber:
+        print("Git gud scrub,  the CPU was able to smash you!\n")
+else:
+        print("You have won three rounds, so you win the game!\n")
     
 if playerScore >= 3:
-    print("You Scored three points first, well done!")
-    imageWin.show()
+        print("You Scored three points first, well done!")
+        imageWin.show()
 else:
-    print("The CPU has scored three points first and defeated you.")
-    imageLoss.show()
+        print("The CPU has scored three points first and defeated you.")
+        imageLoss.show()
 
 
 
@@ -112,6 +112,3 @@ else:
 # int () converts whatever is input into an INTEGER
 # YOUR CODE IS NOT INDICATING IF GUESS IS TOO HIGH / TOO LOW. 
 # CORRECT GUESS IS NOT WORKING EITHER.  SEE SCREENSHOT. 
-
->>>>>>> Stashed changes
-    
