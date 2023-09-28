@@ -67,6 +67,8 @@ while playerScore != 3 or cpuScore != 3:
         playerGuess = int(input("Think of your number, type it in and then push ENTER.\n"))
         # int () converts whatever is input into an INTEGER
         print(f"You have picked{playerGuess}. Let's see if it is a match!\n")
+    # YOUR CODE IS NOT INDICATING IF GUESS IS TOO HIGH / TOO LOW. 
+    # CORRECT GUESS IS NOT WORKING EITHER.  SEE SCREENSHOT. 
     if playerGuess == secretNumber:
         playerScore += 1
         print("A winner is you! It's a match!\n")
@@ -76,6 +78,7 @@ while playerScore != 3 or cpuScore != 3:
             print("Your guess is too low!\n")
         else:
             print("Your guess is too high!\n")
+    # NUMBER OF GUESSES REMAINING IS NOT UPDATING AFTER EACH GUESS. 
     numGuesses += 1
 if playerGuess != secretNumber:
     cpuScore += 1
