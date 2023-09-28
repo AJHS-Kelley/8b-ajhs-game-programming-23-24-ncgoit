@@ -16,7 +16,7 @@
 import random # Import the random module to our code.
 
 # DECLARATIONS
-secretNumber = -1
+#secretNumber = -1
 playerGuess = -1
 playerScore = 0
 cpuScore = 0
@@ -28,8 +28,7 @@ rangeMax = -1
 numAttempts = -1
 
 print("""
-
-		+=========================+
+    	+=========================+
         |                         |
         |    Guess the Number     |
         |          by             |
@@ -40,7 +39,7 @@ print("""
 
 playerName = input("What should I call you?\nType your name and press enter.\n")
 #VERIFY INPUT WHENEVER POSSIBLE!
-print(f"You want me to call you {playerName}. Is that correct?")
+print(f"You want me to call you {playerName}. Is that correct?\n")
 isCorrect = input("Please type Yes if correct, no if not correct.\n")
 if isCorrect == "Yes":
 	print(f"Ok {playerName}, let's continue!")
@@ -49,24 +48,24 @@ else:
     
     
 # CPU SECRET NUMBER GENERATION0 
-secretNumber = random.randint(0,20)
-print(secretNumber)
+#secretNumber = random.randint(0,20)
+
 
 # PLAYER GUESS
+numGuesses = 4
 print("You need to guess a number from 0 to 20 and you have four guesses.\n")
 
 while playerScore != 3 or cpuScore != 3:
 	# pass Tells Python to skip this block without giving an error.
-    secretNumber = random.randint(0,20) # INCLUSIVE
     #print(secretNumber)
-    playerGuess = int(input("Think of your number, type it in and then push ENTER"))
+    secretNumber = random.randint(0,20) # INCLUSIVE
+    print(secretNumber)
+
     # int() converts whatever is input into an INTERGER
-    print(f"You have picked {playerGuess}. Let's see if it is a match!\n")
-    for guesses in range(4):
-        print(f"You have {4 - numGuesses} guesses left this round!\n")
+    for numGuesses in range(4):
         playerGuess = int(input("Think of your number, type it in and then push ENTER.\n"))
-        # int () converts whatever is input into an INTEGER
         print(f"You have picked{playerGuess}. Let's see if it is a match!\n")
+<<<<<<< Updated upstream
     # YOUR CODE IS NOT INDICATING IF GUESS IS TOO HIGH / TOO LOW. 
     # CORRECT GUESS IS NOT WORKING EITHER.  SEE SCREENSHOT. 
     if playerGuess == secretNumber:
@@ -74,10 +73,17 @@ while playerScore != 3 or cpuScore != 3:
         print("A winner is you! It's a match!\n")
         break # immediately exit a loop!
     else:
+=======
+        if playerGuess == secretNumber:
+            playerScore += 1
+            print("A winner is you! It's a match!\n")
+
+>>>>>>> Stashed changes
         if playerGuess < secretNumber:
             print("Your guess is too low!\n")
         else:
             print("Your guess is too high!\n")
+<<<<<<< Updated upstream
     # NUMBER OF GUESSES REMAINING IS NOT UPDATING AFTER EACH GUESS. 
     numGuesses += 1
 if playerGuess != secretNumber:
@@ -85,4 +91,27 @@ if playerGuess != secretNumber:
     print("You have won three rounds, so you win the game!\n")
 else:
     print("Git gud scrub,  the CPU was able to smash you!\n")
+=======
+
+        print(f"You have {numGuesses - numAttempts} guesses left this round!\n")   
+        if playerGuess != secretNumber:
+            print("Git gud scrub,  the CPU was able to smash you!\n")
+        else:
+            print("You have won three rounds, so you win the game!\n")
+    
+if playerScore >= 3:
+    print("You Scored three points first, well done!")
+    imageWin.show()
+else:
+    print("The CPU has scored three points first and defeated you.")
+    imageLoss.show()
+
+
+
+
+# int () converts whatever is input into an INTEGER
+# YOUR CODE IS NOT INDICATING IF GUESS IS TOO HIGH / TOO LOW. 
+# CORRECT GUESS IS NOT WORKING EITHER.  SEE SCREENSHOT. 
+
+>>>>>>> Stashed changes
     
