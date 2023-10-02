@@ -1,4 +1,4 @@
-# Collections Examples, Nevaeh Copeland, v0.2b
+# Collections Examples, Nevaeh Copeland, v0.2c
 
 # List -- ORDEED, CHANGEABLE, ALLOWS DUPLICATE VALUES
 breakfastFoods = ["Bacon", "Waffles", "Pancakes", "Cereal", "Milk"]
@@ -66,16 +66,49 @@ classGPA = [3.14, 2.25, 1.74, 1.99, 0.99, 4.25]
 # print(classGPA)
 
 # Pause -- WYOC .append() another item to each list. .insert() an item at index 5.
-breakfastFoods.append("toast")
-print(breakfastFoods)
-testScores.append(74)
-print(testScores)
-classGPA.append(3.75)
-print(classGPA)
+# breakfastFoods.append("toast")
+# print(breakfastFoods)
+# testScores.append(74)
+# print(testScores)
+# classGPA.append(3.75)
+# print(classGPA)
 
-breakfastFoods.insert(5, "grits")
-print(breakfastFoods)
-testScores.insert(5, 67)
-print(testScores)
-classGPA.insert(5, 3.21)
-print(classGPA)
+# breakfastFoods.insert(5, "grits")
+# print(breakfastFoods)
+# testScores.insert(5, 67)
+# print(testScores)
+# classGPA.insert(5, 3.21)
+# print(classGPA)
+
+# Deleting Items from a list
+# Use .remove() to remove a specific item from the list
+# breakfastFoods.remove("Waffles")
+# print(breakfastFoods)
+# testScores.remove(100)
+# print(testScores)
+# classGPA.remove(2.25)
+# print(classGPA)
+
+# To delete using the index value we use .pop()
+# breakfastFoods.pop(4)
+# print(breakfastFoods)
+# testScores.pop(4)
+# print(testScores)
+# classGPA.pop(4)
+# print(classGPA)
+
+# PAUSE - WYOC -- .pop() the 2nd element from each list. .remove() any item from the list.
+# breakfastFoods.pop(1)
+# print(breakfastFoods)
+# testScores.pop(1)
+# print(testScores)
+# classGPA.pop(1)
+# print(classGPA)
+
+# breakfastFoods.remove("Cereal")
+# print(breakfastFoods)
+# testScores.remove(95)
+# print(testScores)
+# classGPA.remove(3.14)
+# print(classGPA)
+
