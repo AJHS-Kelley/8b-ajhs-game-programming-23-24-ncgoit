@@ -1,4 +1,4 @@
-# Collections Examples, Nevaeh Copeland, v0.2a
+# Collections Examples, Nevaeh Copeland, v0.2b
 
 # List -- ORDEED, CHANGEABLE, ALLOWS DUPLICATE VALUES
 breakfastFoods = ["Bacon", "Waffles", "Pancakes", "Cereal", "Milk"]
