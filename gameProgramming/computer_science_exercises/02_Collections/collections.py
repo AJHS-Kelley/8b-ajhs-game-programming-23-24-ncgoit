@@ -24,4 +24,8 @@ classGPA = [3.14, 2.25, 1.74, 1.99, 0.99, 4.25]
 #print(testScores[-1])
 #print(classGPA[-1])
 
+# Pause - WYOC -- Acces the third Element in Each List
+# print(breakfastFoods[2])
+# print(testScores[2])
+# print(classGPA[2])
 
