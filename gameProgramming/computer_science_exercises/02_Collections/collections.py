@@ -1,4 +1,4 @@
-# Collections Examples, Nevaeh Copeland, v0.4C
+# Collections Examples, Nevaeh Copeland, v0.5a
 # List -- ORDEED, CHANGEABLE, ALLOWS DUPLICATE VALUES
 # breakfastFoods = ["Bacon", "Waffles", "Pancakes", "Cereal", "Milk"]
 # Each item on the list is known as an ELEMENT.
@@ -148,9 +148,14 @@ classGPA = [3.14, 2.25, 1.74, 1.99, 0.99, 4.25, 2.25]
 # print(f"There is {gpaCountRepeat} GPA equal to 2.25")
 
 # Delete All Contents of a List -- .clear()
-breakfastFoods.clear()
-print(f"The breakfast foods list is {breakfastFoods}")
-testScores.clear()
-print(f"The test scores list is {testScores}")
-classGPA.clear()
-print(f"The class gpa list is {classGPA}")
+# breakfastFoods.clear()
+# print(f"The breakfast foods list is {breakfastFoods}")
+# testScores.clear()
+# print(f"The test scores list is {testScores}")
+# classGPA.clear()
+# print(f"The class gpa list is {classGPA}")
+
+# Common Bugs -- Index Out of Range
+print(f"The last item in the list is {breakfastFoods[5]}.")
+
+print(f"The last item in the testScores list is {testScores[len(testScores) - 1]}")
