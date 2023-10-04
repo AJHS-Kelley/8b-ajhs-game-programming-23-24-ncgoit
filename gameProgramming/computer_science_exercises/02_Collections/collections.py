@@ -1,15 +1,14 @@
-# Collections Examples, Nevaeh Copeland, v0.4a
-
+# Collections Examples, Nevaeh Copeland, v0.4b
 # List -- ORDEED, CHANGEABLE, ALLOWS DUPLICATE VALUES
-breakfastFoods = ["Bacon", "Waffles", "Pancakes", "Cereal", "Milk"]
+# breakfastFoods = ["Bacon", "Waffles", "Pancakes", "Cereal", "Milk"]
 # Each item on the list is known as an ELEMENT.
 # The position in the list for each is the INDEX.
 # The element "BACON" is at index 0.
 # Python Only: index -1 it is the last item on the list.
-testScores = [95, 100, 25, 15, 27, 35]
-classGPA = [3.14, 2.25, 1.74, 1.99, 0.99, 4.25]
+# testScores = [95, 100, 25, 15, 27, 35]
+# classGPA = [3.14, 2.25, 1.74, 1.99, 0.99, 4.25]
 
-# Printing Contents of an List
+#Printing Contents of an List
 #print(breakfastFoods)
 #print(testScores)
 #print(classGPA)
@@ -57,7 +56,7 @@ classGPA = [3.14, 2.25, 1.74, 1.99, 0.99, 4.25]
 # classGPA.append(1.99)
 # print(classGPA)
 
-# # .insert() allows you to place an item at a specific index in the list.
+#.insert() allows you to place an item at a specific index in the list.
 # breakfastFoods.insert(3, "Parfait")
 # print(breakfastFoods)
 # testScores.insert(3, 55)
@@ -119,12 +118,32 @@ classGPA = [3.14, 2.25, 1.74, 1.99, 0.99, 4.25]
 
 # List Methods -- Functions for working with lists.
 # Sorting Lists -- Alphanumerical -- Ascending -- Captial Letters before Lower Case Letters
-print(f"The original breakfastFoods list is {breakfastFoods}.")
-breakfastFoods.sort()
-print(f"The sorted breakfastFoods list is {breakfastFoods}.")
-print(f"The original testScores list is {testScores}.")
-testScores.sort()
-print(f"The sorted testScores list is {testScores}.")
-print(f"The original classGPA list is {classGPA}.")
-classGPA.sort()
-print(f"The sorted classGPA list is {classGPA}.")
+# print(f"The original breakfastFoods list is {breakfastFoods}.")
+# breakfastFoods.sort()
+# print(f"The sorted breakfastFoods list is {breakfastFoods}.")
+# print(f"The original testScores list is {testScores}.")
+# testScores.sort()
+# print(f"The sorted testScores list is {testScores}.")
+# print(f"The original classGPA list is {classGPA}.")
+# classGPA.sort()
+# print(f"The sorted classGPA list is {classGPA}.")
+
+breakfastFoods = ["Bacon", "Waffles", "Pancakes", "Cereal", "Milk", "Bacon"]
+testScores = [95, 100, 25, 15, 27, 35, 25]
+classGPA = [3.14, 2.25, 1.74, 1.99, 0.99, 4.25, 2.25]
+
+# .count() will return the number of times a value appears in a list.
+numWaffles = breakfastFoods.count("Waffles")
+print(f"There are {numWaffles} Wafefles in the list.")
+numBacon = breakfastFoods.count("Bacon")
+print(f"There are {numBacon} Bacon in the list.")
+# Pause -- WYOC -- Use .count() to count for a single item in the list and multiple items. Use testScores and classGPA.
+testCount = testScores.count(95)
+print(f"The number 95 was scored {testCount} times.")
+testCount = testScores.count(25)
+print(f"The number 25 was scored {testCount} times.")
+
+gpaCount = classGPA.count(3.14)
+print(f"There is {gpaCount} GPA lower 1.0 ")
+gpaCountRepeat = classGPA.count(2.25)
+print(f"There is {gpaCountRepeat} GPA equal to 2.25")
