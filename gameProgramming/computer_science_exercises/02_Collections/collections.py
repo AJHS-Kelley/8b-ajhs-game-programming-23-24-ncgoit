@@ -1,4 +1,4 @@
-# Collections Examples, Nevaeh Copeland, v0.4b
+# Collections Examples, Nevaeh Copeland, v0.4C
 # List -- ORDEED, CHANGEABLE, ALLOWS DUPLICATE VALUES
 # breakfastFoods = ["Bacon", "Waffles", "Pancakes", "Cereal", "Milk"]
 # Each item on the list is known as an ELEMENT.
@@ -133,17 +133,24 @@ testScores = [95, 100, 25, 15, 27, 35, 25]
 classGPA = [3.14, 2.25, 1.74, 1.99, 0.99, 4.25, 2.25]
 
 # .count() will return the number of times a value appears in a list.
-numWaffles = breakfastFoods.count("Waffles")
-print(f"There are {numWaffles} Wafefles in the list.")
-numBacon = breakfastFoods.count("Bacon")
-print(f"There are {numBacon} Bacon in the list.")
+# numWaffles = breakfastFoods.count("Waffles")
+# print(f"There are {numWaffles} Wafefles in the list.")
+# numBacon = breakfastFoods.count("Bacon")
+# print(f"There are {numBacon} Bacon in the list.")
 # Pause -- WYOC -- Use .count() to count for a single item in the list and multiple items. Use testScores and classGPA.
-testCount = testScores.count(95)
-print(f"The number 95 was scored {testCount} times.")
-testCount = testScores.count(25)
-print(f"The number 25 was scored {testCount} times.")
+# testCount = testScores.count(95)
+# print(f"The number 95 was scored {testCount} times.")
+# testCount = testScores.count(25)
+# print(f"The number 25 was scored {testCount} times.")
+# gpaCount = classGPA.count(3.14)
+# print(f"There is {gpaCount} GPA lower 1.0 ")
+# gpaCountRepeat = classGPA.count(2.25)
+# print(f"There is {gpaCountRepeat} GPA equal to 2.25")
 
-gpaCount = classGPA.count(3.14)
-print(f"There is {gpaCount} GPA lower 1.0 ")
-gpaCountRepeat = classGPA.count(2.25)
-print(f"There is {gpaCountRepeat} GPA equal to 2.25")
+# Delete All Contents of a List -- .clear()
+breakfastFoods.clear()
+print(f"The breakfast foods list is {breakfastFoods}")
+testScores.clear()
+print(f"The test scores list is {testScores}")
+classGPA.clear()
+print(f"The class gpa list is {classGPA}")
