@@ -55,7 +55,7 @@ else:
 numGuesses = 4
 print("You need to guess a number from 0 to 20 and you have four guesses.\n")
 
-while playerScore != 3 or cpuScore != 3:
+while playerScore != 3 and cpuScore != 3:
 	# pass Tells Python to skip this block without giving an error.
     #print(secretNumber)
     secretNumber = random.randint(0,20) # INCLUSIVE
@@ -83,23 +83,18 @@ while playerScore != 3 or cpuScore != 3:
         
     if playerGuess != secretNumber:
         cpuScore += 1
-        print("You have won three rounds, so you win the game!\n")
-    else:
         print("Git gud scrub,  the CPU was able to smash you!\n")
-
-print(f"You have {numGuesses - numAttempts} guesses left this round!\n")   
+        
     
-if playerGuess != secretNumber:
-        print("Git gud scrub,  the CPU was able to smash you!\n")
-else:
-        print("You have won three rounds, so you win the game!\n")
+        
+
     
 if playerScore >= 3:
         print("You Scored three points first, well done!")
-        imageWin.show()
+        #imageWin.show()
 else:
         print("The CPU has scored three points first and defeated you.")
-        imageLoss.show()
+        #imageLoss.show()
 
 
 
