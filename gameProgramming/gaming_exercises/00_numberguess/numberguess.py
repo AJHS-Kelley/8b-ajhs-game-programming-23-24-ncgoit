@@ -68,24 +68,19 @@ while playerScore != 3 or cpuScore != 3:
 
     # YOUR CODE IS NOT INDICATING IF GUESS IS TOO HIGH / TOO LOW. 
     # CORRECT GUESS IS NOT WORKING EITHER.  SEE SCREENSHOT. 
-    if playerGuess == secretNumber:
-        playerScore += 1
-        print("A winner is you! It's a match!\n")
-        break # immediately exit a loop!
-    else:
-
         if playerGuess == secretNumber:
             playerScore += 1
             print("A winner is you! It's a match!\n")
-
-
-        if playerGuess < secretNumber:
-            print("Your guess is too low!\n")
+            break # immediately exit a loop!
         else:
-            print("Your guess is too high!\n")
+            if playerGuess < secretNumber:
+                print("Your guess is too low!\n")
+            else:
+                print("Your guess is too high!\n")
 
     # NUMBER OF GUESSES REMAINING IS NOT UPDATING AFTER EACH GUESS. 
-    numGuesses += 1
+        numGuesses += 1
+        
     if playerGuess != secretNumber:
         cpuScore += 1
         print("You have won three rounds, so you win the game!\n")
