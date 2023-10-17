@@ -84,11 +84,7 @@ while playerScore != 3 and cpuScore != 3:
     if playerGuess != secretNumber:
         cpuScore += 1
         print("Git gud scrub,  the CPU was able to smash you!\n")
-        
-    
-        
-
-    
+     
 if playerScore >= 3:
         print("You Scored three points first, well done!")
         #imageWin.show()
