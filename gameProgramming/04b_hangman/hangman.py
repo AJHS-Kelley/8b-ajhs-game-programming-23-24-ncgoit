@@ -1,4 +1,4 @@
-# Hangman Game by Nevaeh Copeland, v0.3
+# Hangman Game by Nevaeh Copeland, v0.4
 import random
 words = 'game four five dark moon read eating camera button avenue emerge demand raining absolute mountain sentence children changes trumpet delivery repeated abbreviation television theatre living contemplating jeopardizing naivenesses confused supercalifragilisticexpialidocious'.split()
 
@@ -46,10 +46,19 @@ def getRandomWord(wordList): # Return a random word from the list
     # len(listName) -1 is EXTREMELY COMMON FOR WORKING WITH LISTS.
     return wordList[wordIndex]
 
-i = 0
-while i < 50:
-    word = getRandomWord(words)
-    print(word)
-    i += 1
+def displayBoard (missedLetters, correctLetters, secreatWord):
+    print(HANGMAN_BOARD[len(missedLetters)])
+    print()
+
+    print('Missed Letters:', end = ' ')
+    for eachLetter in missedLetters:
+        print(eachLetter, end = ' ')
+        print()
+
+# i = 0
+# while i < 50:
+#     word = getRandomWord(words)
+#     print(word)
+#     i += 1
 
 
