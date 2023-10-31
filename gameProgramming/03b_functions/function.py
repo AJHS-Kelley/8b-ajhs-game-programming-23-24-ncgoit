@@ -28,6 +28,7 @@ def rollDice(numDice, sizeDice):
         print(f"Roll: {roll}\n")
         print(f"Sum: {sum}\n")
         numRolled +=1
+    return sum
 
 rollDice (2, 8)
 rollDice (2, 21)
@@ -39,3 +40,7 @@ wisdomPlayer = rollDice(3,6)
 print(strengthPlayer)
 print(dexterityPlayer)
 print(wisdomPlayer)
+
+
+
+
