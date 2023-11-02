@@ -1,4 +1,4 @@
-# Hangman Game by Nevaeh Copeland, v0.5
+# Hangman Game by Nevaeh Copeland, v0.6
 import random
 words = 'game four five dark moon read eating camera button avenue emerge demand raining absolute mountain sentence children changes trumpet delivery repeated abbreviation television theatre living contemplating jeopardizing naivenesses confused supercalifragilisticexpialidocious'.split()
 
@@ -79,7 +79,15 @@ def getGuess(alreadyGuessed):
         elif guess not in 'abcdefghijklmnopqrstuvwxyz':
             print('Please guess a LETTER from the English alphabet.')
         else:
-            return guess 
+            return guess
+
+def playAgain():
+    print('Do you want to pay again? Yes or No?')
+    return input().lower().startswith('y')
+
+
+
+
 
 # i = 0
 # while i < 50:
