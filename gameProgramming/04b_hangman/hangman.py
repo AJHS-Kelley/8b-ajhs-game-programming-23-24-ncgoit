@@ -1,4 +1,4 @@
-# Hangman Game by Nevaeh Copeland, v0.6
+# Hangman Game by Nevaeh Copeland, v0.7
 import random
 words = 'game four five dark moon read eating camera button avenue emerge demand raining absolute mountain sentence children changes trumpet delivery repeated abbreviation television theatre living contemplating jeopardizing naivenesses confused supercalifragilisticexpialidocious'.split()
 
@@ -53,9 +53,9 @@ def displayBoard (missedLetters, correctLetters, secretWord):
     print('Missed Letters:', end = ' ')
     for eachLetter in missedLetters:
         print(eachLetter, end = ' ')
-        print()
+    print()
 
-        blanks = '_' * len(secretWord)
+    blanks = '_' * len(secretWord)
 
     # Replace Blanks with Correct Letters
     for i in range (len(secretWord)):
@@ -107,10 +107,10 @@ while True:
             if secretWord[i] not in correctLetters:
                 foundAllLetters = False
                 break
-            if foundAllLetters: # if True
-                print('Dang you got me :( but W mans!')
-                print('The secret word was' + secretWord)
-                gameIsDone = True
+        if foundAllLetters: # if True
+            print('Dang you got me :( but W mans!')
+            print('The secret word was' + secretWord)
+            gameIsDone = True
     else:
         missedLetters = missedLetters + guess
 
