@@ -85,8 +85,49 @@ def playAgain():
     print('Do you want to pay again? Yes or No?')
     return input().lower().startswith('y')
 
+# Introduce the Game
+print('Welcome to Hangman created by Nevaeh C.')
+missedLetters = ''
+correctLetters = ''
+secretWord = getRandomWord(words)
+gameIsDone = False
 
+# Main Game Loop
+while True:
+    displayBoard(missedLetters, correctLetters, secretWord)
 
+    guess = getGuess(missedLetters + correctLetters)
+
+    if guess in secretWord:
+        correctLetters = correctLetters + guess
+
+        # Check To See If Winner, Winner Chicken Dinner
+        foundAllLetters = True
+        for i in range(len(secretWord)):
+            if secretWord[i] not in correctLetters:
+                foundAllLetters = False
+                break
+            if foundAllLetters: # if True
+                print('Dang you got me :( but W mans!')
+                print('The secret word was' + secretWord)
+                gameIsDone = True
+    else:
+        missedLetters = missedLetters + guess
+
+        if len(missedLetters) == len(HANGMAN_BOARD) - 1:
+            displayBoard(missedLetters, correctLetters, secretWord)
+            print('You have run out og guesses and lost the game.')
+            print('You made this number of correct guesses' + str(len(correctLetters)))
+            print('The secret word was' + secretWord)
+            gameIsDone = True
+    if gameIsDone:
+        if playAgain():
+            missedLetters = ''
+            correctLetters = ''
+            gameIsDone = False
+            secretWord = getRandomWord(words)
+        else:
+            break
 
 
 # i = 0
