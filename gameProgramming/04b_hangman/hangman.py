@@ -106,7 +106,7 @@ def getGuess(alreadyGuessed):
             return guess
 
 def playAgain():
-    print('Do you want to pay again? Yes or No?')
+    print('Do you want to play again? Yes or No?')
     return input().lower().startswith('y')
 
 # Introduce the Game
@@ -149,7 +149,7 @@ while True:
                 break
         if foundAllLetters: # if True
             print('Dang you got me :( but W mans!')
-            print('The secret word was' +  secretWord)
+            print('The secret word was ' +  secretWord)
             gameIsDone = True
     else:
         missedLetters = missedLetters + guess
