@@ -133,7 +133,7 @@ gameIsDone = False
 
 # Main Game Loop
 while True:
-    print('The scret word is from the ' + secretSet + ' categroy.\n')
+    print('The secret word is from the ' + secretSet + ' categroy.\n')
     displayBoard(missedLetters, correctLetters, secretWord)
 
     guess = getGuess(missedLetters + correctLetters)
@@ -157,8 +157,8 @@ while True:
         if len(missedLetters) == len(HANGMAN_BOARD) - 1:
             displayBoard(missedLetters, correctLetters, secretWord)
             print('You have run out og guesses and lost the game.')
-            print('You made this number of correct guesses' + str(len(correctLetters)))
-            print('The secret word was' + secretWord)
+            print('You made this number of correct guesses ' + str(len(correctLetters)))
+            print('The secret word was ' + secretWord)
             gameIsDone = True
     if gameIsDone:
         if playAgain():
