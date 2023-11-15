@@ -20,6 +20,32 @@ def getRandomTeam(randomOpposingTeams):
     return randomOpposingTeams[opposingTeam]
     pass
 
-def getRandomTeam():
+
+def shootBall():
     pass
 
+def function(Param1, param2, param3):
+    pass
+
+def countPoints():
+    pass
+
+# def functionOne():
+#     pass
+# def functionTwo(param1):
+#     pass
+# def functionThree(param1 = "Default Value"):
+#     pass
+# def function(Param1, param2, param3):
+#     pass
+# def catchBall(throwQuality, passCatchScore, weather):
+#     if throwQuality > 5.0 and passCatchScore >= 90 and weather == 'Sunny':
+#         ballCaught = True
+#     elif throwQuality > 4.0 and passCatchScore >= 75 and weather == 'Windy':
+#         ballCaught = False
+#     else:
+#         print("Oh, no...INTERCEPTION!/n")
+#         ballIntercepted = True
+#         return ballIntercepted
+#     return ballCaught
+# catchBall(4.25, 107, 'Rainy')
