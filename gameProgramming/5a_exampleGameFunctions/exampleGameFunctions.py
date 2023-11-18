@@ -49,12 +49,12 @@ def freeThrow(playerSkill):
     if playerSkill > 3:
         print('You scored both points!')
         finalScore = +2
-
     if playerSkill == 3:
        print('You missed one. Half Decent!')
-       opponentFinalScore = +2
+       finalScore = +1
     if playerSkill < 3:
         print('You missed both and the other team scored with the rebound. \n Keep your head up!')
+        opponentFinalScore = +2
 
 playerHeight = random.randint(0,len(playerHeightOptions))
 playerSkill = random.randint(0,len(playerSkillOptions))
@@ -62,7 +62,7 @@ playerSkill = random.randint(0,len(playerSkillOptions))
 opponentHeight = random.randint(0,len(opponentHeightOptions))
 opponentSkill = random.randint(0,len(opponentSkillOptions))
 
-def shootBall(playerHeight, playerSkill, opponentHeight, opponentSkill):
+def shootBall(playerHeight, playerSkill, opponentHeight, opponentSkill,):
     print('Your team is on offense and your teammate has passed you the ball.')
     if playerHeight > opponentHeight:
         print('They fouled you. You get two freethrows!')
@@ -77,7 +77,12 @@ def shootBall(playerHeight, playerSkill, opponentHeight, opponentSkill):
         print('Both of you have a similar skill set. The ref has called jump ball.')
         jumpBall()
 
-shootBall (playerHeight, playerSkill, opponentHeight, opponentSkill)
+while finalScore <= 21:
+    print('Continue playing your heart out!')
+else:
+    print('Great game today!')
+
+shootBall (playerHeight, playerSkill, opponentHeight, opponentSkill,e)
 playerHeight = random.randint(0,len(playerHeightOptions))
 playerSkill = random.randint(0,len(playerSkillOptions))
 opponentHeight = random.randint(0,len(opponentHeightOptions))
@@ -90,6 +95,13 @@ opponentHeight = random.randint(0,len(opponentHeightOptions))
 opponentSkill = random.randint(0,len(opponentSkillOptions))
 
 
+def finalScore(finalScore, opponentFinalScore):
+    if finalScore > opponentFinalScore:
+        print(f'Congratulations you won the game! The score was {finalScore} to {opponentFinalScore}')
+    if finalScore < opponentFinalScore:
+        print(f'Unfortunately your team has lost. The score was {opponentFinalScore} to {finalScore}')
+    else:
+        print('Both teams put up a good fight you tied!')
 
 # def countPoints():
 #     print('The Final Score was {finalScore}')
@@ -98,7 +110,7 @@ opponentSkill = random.randint(0,len(opponentSkillOptions))
 
 
 # Introduce the game
-# print('Welcome to your Freshman year as a college asketball player.\n This game was created by Nevaeh Copeland')
+# print('Welcome to your first basketball season as a college freshman.\n This game was created by Nevaeh Copeland')
 
 
 
