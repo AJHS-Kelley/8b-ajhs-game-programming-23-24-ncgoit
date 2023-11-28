@@ -77,12 +77,12 @@ def shootBall(playerHeight, playerSkill, opponentHeight, opponentSkill,):
         print('Both of you have a similar skill set. The ref has called jump ball.')
         jumpBall()
 
-while finalScore <= 21:
-    print('Continue playing your heart out!')
-else:
-    print('Great game today!')
+# while finalScore <= 21:
+#     print('Continue playing your heart out!')
+# else:
+#     print('Great game today!')
 
-shootBall (playerHeight, playerSkill, opponentHeight, opponentSkill,e)
+shootBall (playerHeight, playerSkill, opponentHeight, opponentSkill)
 playerHeight = random.randint(0,len(playerHeightOptions))
 playerSkill = random.randint(0,len(playerSkillOptions))
 opponentHeight = random.randint(0,len(opponentHeightOptions))
