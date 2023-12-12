@@ -148,7 +148,7 @@ while True:
                 foundAllLetters = False
                 break
         if foundAllLetters: # if True
-            print('Dang you got me :( but W mans!')
+            print('Dang you got me. W mans!')
             print('The secret word was ' +  secretWord)
             gameIsDone = True
     else:
