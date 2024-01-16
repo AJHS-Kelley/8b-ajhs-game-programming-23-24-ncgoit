@@ -22,7 +22,6 @@ def genDNA() -> str:
         basesGenerated += 1
     return dnaSequence
 
-dna = genDNA()
 
 def doTranscription(dnaSquence: str) -> tuple:
     
