@@ -4,3 +4,21 @@ Transcription Time:4.037665128707886
 Score: 225000.0
 Nevaeh Copeland
 2024-01-18 14:03:34.258036
+ DNA Sequence: GGG
+RNA Sequence: CCC
+Transcription Time:2.891876459121704
+Score: 225000.0
+Nevaeh Copeland
+2024-01-18 14:06:06.282721
+ DNA Sequence: TCGC
+RNA Sequence: AGCG
+Transcription Time:3.703516960144043
+Score: 225000.0
+Nevaeh Copeland
+2024-01-18 14:07:26.995851
+ DNA Sequence: TGA
+RNA Sequence: ACU
+Transcription Time:6.874133348464966
+Score: 175000.0
+Nevaeh Copeland
+2024-01-18 14:22:47.736627
