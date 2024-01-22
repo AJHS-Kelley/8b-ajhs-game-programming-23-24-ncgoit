@@ -22,3 +22,9 @@ Transcription Time:6.874133348464966
 Score: 175000.0
 Nevaeh Copeland
 2024-01-18 14:22:47.736627
+ DNA Sequence: ACG
+RNA Sequence: UGC
+Transcription Time:6.345905780792236
+Score: 175000.0
+Nevaeh Copeland
+2024-01-22 13:34:15.579796
