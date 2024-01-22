@@ -1,4 +1,4 @@
-# Number Slider, Nevaeh Copeland, based on a project by Al Sweigart, v0.0
+# Number Slider, Nevaeh Copeland, based on a project by Al Sweigart, v0.1
 
 import sys, random, pygame
 # sys module provides access to system resources (i.en Operating System Commands)
@@ -15,3 +15,18 @@ WINDOWWIDTH = 640 # MEASURED IN PIXELS
 WINDOWHEIGHT = 480 # MEASURED IN PIXELS
 FPS = 30
 BLANK = None
+
+# COLOR VALUES in (R, G, B) format.
+# 0 = No Value, 255 = Max Value
+BLACK = (0, 0, 0)
+WHITE = (255, 255, 255)
+BRIGHTBLUE = (0,50, 255)
+DARKTURQUOISE = (3, 54, 73)
+GREEN = (0, 204, 0)
+
+# BOARD DESIGN SETUP
+BGCOLOR = DARKTURQUOISE
+TILECOLOR = GREEN
+TEXTCOLOR = WHITE
+BORDERCOLOE = BRIGHTBLUE
+BASICFONTSIZE = 20 # pixels
