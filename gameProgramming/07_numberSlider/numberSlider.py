@@ -1,4 +1,4 @@
-# Number Slider, Nevaeh Copeland, based on a project by Al Sweigart, v0.2
+# Number Slider, Nevaeh Copeland, based on a project by Al Sweigart, v0.3
 
 import sys, random, pygame
 # sys module provides access to system resources (i.en Operating System Commands)
@@ -38,11 +38,11 @@ MESSAGECOLOR = WHITE
 
 # ESTABLISH WINDOW MARGINS
 XMARGIN = int((WINDOWWIDTH - (TILESIZE * BOARDWIDTH + (BOARDWIDTH-1))) / 2 )
-# int((WINDOWWIDTH - (TILESIZE * BOARDWIDTH + (3))) / 2 )
-# int((640 - (320 + (3))) / 2 )
-# int((640 - (323 / 2)
-# int((640 - (161.5))
-# int(478.5)
-# XMARGIN = 478
-print(XMARGIN)
-YMARGIN = 
+YMARGIN = int((WINDOWWIDTH - (TILESIZE * BOARDWIDTH + (BOARDWIDTH-1))) / 2 )
+
+# DIRECTIONS
+UP = 'up'
+DOWN = 'down'
+LEFT = 'left'
+RIGHT = 'right
+'
