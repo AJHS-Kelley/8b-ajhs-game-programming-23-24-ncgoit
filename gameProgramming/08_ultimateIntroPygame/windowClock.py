@@ -7,12 +7,15 @@ pygame.display.set_caption('Runner')
 clock = pygame.time.Clock()
 test_font = pygame.font.Font(None, 50)
 
-sky_surface = pygame.image.load('img/ultimatePygame/skypicture.png').convert()
-ground_surface = pygame.image.load('img/ultimatePygame/ground_surface.jpg').convert()
+sky_surface = pygame.image.load('img/ultimatePygame/Sky.png').convert()
+ground_surface = pygame.image.load('img/ultimatePygame/ground.png').convert()
 text_surface = test_font.render('My Game', False, 'Green')
 
-snail_surface = pygame.image.load('img/ultimatePygame/snailPicture.jfif').convert_alpha()
+snail_surface = pygame.image.load('img/ultimatePygame/snail1.png').convert_alpha()
 snail_x_pos = 600
+
+player_surf = pygame.image.load('img/ultimatePygame/player_walk_1.png').convert_alpha()
+player_rect = player_surf.get_rect(midbottom = (80,300))
 
 while True:
     for event in pygame.event.get():
@@ -20,12 +23,13 @@ while True:
             pygame.quit()
             exit()
     
-    # screen.blit(sky_surface,(0,0))
-    # screen.blit(ground_surface,(0,300))
-    # screen.blit(text_surface,(300,50))
+    screen.blit(sky_surface,(0,0))
+    screen.blit(ground_surface,(0,300))
+    screen.blit(text_surface,(300,50))
     snail_x_pos -= 4
     if snail_x_pos < -100: snail_x_pos = 800
     screen.blit(snail_surface,(snail_x_pos,250))
+    screen.blit(player_surf,player_rect)
 
     pygame.display.update()
     clock.tick(60)
