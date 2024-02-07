@@ -28,3 +28,9 @@ Transcription Time:6.345905780792236
 Score: 175000.0
 Nevaeh Copeland
 2024-01-22 13:34:15.579796
+ DNA Sequence: AA
+RNA Sequence: UU
+Transcription Time:3.941159248352051
+Score: 225000.0
+Nevaeh Copeland
+2024-02-05 13:34:34.922131
