@@ -99,7 +99,7 @@ def getGuess(alreadyGuessed):
         if len(guess) != 1:
             print('Please enter a single letter.')
         elif guess in alreadyGuessed:
-            print('Letter as been guessed already, try again.')
+            print('Letter has been guessed already, try again.')
         elif guess not in 'abcdefghijklmnopqrstuvwxyz':
             print('Please guess a LETTER from the English alphabet.')
         else:
