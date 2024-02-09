@@ -38,6 +38,7 @@ while True:
         else:
             if event.type == pygame.KEYDOWN and event.key == pygame.K_SPACE:
                 game_active = True
+                snail_rect.left = 800
 
     if game_active:
         screen.blit(sky_surface,(0,0))
