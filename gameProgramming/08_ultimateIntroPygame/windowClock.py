@@ -28,7 +28,10 @@ snail_rect = snail_surface.get_rect(bottomright = (600, 300))
 player_surf = pygame.image.load('img/ultimatePygame/player_walk_1.png').convert_alpha()
 player_rect = player_surf.get_rect(midbottom = (80,300))
 player_gravity = 0
+
+# Intro Screen
 player_stand = pygame.image.load('img/ultimatePygame/player_stand.png').convert_alpha()
+player_stand_rect = player_stand.get_rect(center = (400,200))
 
 while True:
     for event in pygame.event.get():
@@ -73,7 +76,7 @@ while True:
             game_active = False
     else:
         screen.fill(94,129,162)
-    
+        screen.blit(player_stand,player_stand_rect)
     pygame.display.update()
     clock.tick(60)
 
