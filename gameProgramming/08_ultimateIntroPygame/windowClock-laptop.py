@@ -16,7 +16,7 @@ test_font = pygame.font.Font(None, 50)
 game_active = False
 start_time = 0
 
-sky_surface = pygame.image.load('img/ultimatePygame/Sky.png').convert()
+sky_surface = pygame.image.load('img/ultimatePygame/Sky').convert()
 ground_surface = pygame.image.load('img/ultimatePygame/ground.png').convert()
 
 # score_surf = test_font.render('My Game', False, (64,64,64))
