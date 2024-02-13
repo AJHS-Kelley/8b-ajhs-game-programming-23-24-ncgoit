@@ -7,7 +7,6 @@ def display_score():
     score_rect = score_surf.get_rect(center = (400,50))
     screen.blit(score_surf,score_rect)
 
-
 pygame.init()
 screen = pygame.display.set_mode((800,400))
 pygame.display.set_caption('Runner')
@@ -31,7 +30,11 @@ player_gravity = 0
 
 # Intro Screen
 player_stand = pygame.image.load('img/ultimatePygame/player_stand.png').convert_alpha()
+player_stand = pygame.transform.rotozoom(player_stand,0,2)
 player_stand_rect = player_stand.get_rect(center = (400,200))
+
+game_name = test_font.render('Pixel Runner',False,(111,196,169))
+game_name_rect = game_name.get_rect(center = (400,130))
 
 while True:
     for event in pygame.event.get():
@@ -75,8 +78,10 @@ while True:
         if snail_rect.colliderect(player_rect):
             game_active = False
     else:
-        screen.fill(94,129,162)
+        screen.fill((94,129,162))
         screen.blit(player_stand,player_stand_rect)
+        screen.blit(game_name,game_name_rect)
+
     pygame.display.update()
     clock.tick(60)
 
