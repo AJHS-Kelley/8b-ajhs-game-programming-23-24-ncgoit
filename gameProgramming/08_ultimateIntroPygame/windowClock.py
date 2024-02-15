@@ -1,6 +1,8 @@
 import pygame
 from sys import exit
 
+# Please finish the code instead of playing with the VR headset next time. 
+
 def display_score():
     current_time = int(pygame.time.get_ticks() / 1000) - start_time
     score_surf = test_font.render(f'Score: {current_time}',False,(64,64,64))
