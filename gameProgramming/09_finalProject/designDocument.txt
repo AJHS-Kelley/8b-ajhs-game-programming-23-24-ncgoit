@@ -1,15 +1,25 @@
-Game Genre / Type:
-Theme:
+Game Genre / Type: Snake type of game
+Theme: basic (not too much going on)
 
-Win Condition(s):
-Lose Condition(s):
+Win Condition(s): hit a certain number
+Lose Condition(s): hit wall border
 
 Levels / Screens:
-    --
-    --
+    -- dark screen with colored items
 
 Objectives / Enemies / Obstacles:
-    --
+    -- eat item
+    -- wall is obstacle
 
 Items / Equipment / Objects:
-    --
+    -- power up
+
+Difficulty Changes:
+    -- normal (more space)
+    -- medium (less space)
+
+Controls:
+    -- Up arrow - move upward
+    -- Down arrow - move downward
+    -- Left arrow - move left
+    -- Right arrow - move right
