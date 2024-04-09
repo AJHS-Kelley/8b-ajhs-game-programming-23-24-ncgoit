@@ -75,7 +75,7 @@ while True:
         #     obstacle_rect_list.append(snail_surface.get_rect(bottomright = (randint(900,1100),300)))
 
     if game_active:
-        screen.blit(background_pixels,(200,200))
+        screen.blit(background_pixels,(250,200))
         # pygame.draw.rect(screen,'#c0e8ec',score_rect)
         # pygame.draw.rect(screen,'#c0e8ec',score_rect,10)
         # screen.blit(score_surf,score_rect)
