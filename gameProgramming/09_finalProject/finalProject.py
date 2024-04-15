@@ -1,4 +1,4 @@
-# Snake Game, Nevaeh Copeland v0.0
+# Snake Game, Nevaeh Copeland v0.1
 import turtle
 import time
 import random
@@ -24,3 +24,25 @@ head.color("black")
 head.penup()
 head.goto(0,0)
 head.direction = "stop"
+
+# Snake food
+food = turtle.Turtle()
+food.speed(0)
+food.shape("circle")
+food.color("red")
+food.penup()
+food.goto(0,100)
+
+segments = []
+
+# Pen
+pen = turtle.Turtle()
+pen.speed(0)
+pen.shape("square")
+pen.color("white")
+pen.penup()
+pen.hideturtle()
+pen.goto(0,160)
+pen.write("Click W, A, S, or D to Begin!", align = "center", font = ("Courier", 24, "normal"))
+pen.goto(0, 300)
+pen.write("Score: 0  High Score: 0", align="center", font=("Courier", 24, "normal"))

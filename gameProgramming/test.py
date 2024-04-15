@@ -94,7 +94,7 @@ while True:
     wn.update()
 
     # Check for a collision with the border
-    if head.xcor()>290 or head.xcor()<-290 or head.ycor()>290 or head.ycor()<-290:
+    if head.xcor()>340 or head.xcor()<-340 or head.ycor()>340 or head.ycor()<-340:
         time.sleep(1)
         head.goto(0,0)
         head.direction = "stop"
