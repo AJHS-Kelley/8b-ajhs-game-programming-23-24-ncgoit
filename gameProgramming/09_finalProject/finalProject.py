@@ -46,3 +46,37 @@ pen.goto(0,160)
 pen.write("Click W, A, S, or D to Begin!", align = "center", font = ("Courier", 24, "normal"))
 pen.goto(0, 300)
 pen.write("Score: 0  High Score: 0", align="center", font=("Courier", 24, "normal"))
+
+# Functions
+def go_up():
+    if head.direction != "down":
+        head.direction = "up"
+
+def go_down():
+    if head.direction != "up":
+        head.direction = "down"
+
+def go_left():
+    if head.direction != "right":
+        head.direction = "left"
+
+def go_right():
+    if head.direction != "left":
+        head.direction = "right"
+
+def move():
+    if head.direction == "up":
+        y = head.ycor()
+        head.sety(y + 20)
+
+    if head.direction == "down":
+        y = head.ycor()
+        head.sety(y - 20)
+
+    if head.direction == "left":
+        x = head.xcor()
+        head.setx(x - 20)
+
+    if head.direction == "right":
+        x = head.xcor()
+        head.setx(x + 20)
