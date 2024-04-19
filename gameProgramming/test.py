@@ -47,7 +47,6 @@ pen.write("Click W, A, S, or D to Begin!", align = "center", font = ("Courier", 
 pen.goto(0, 300)
 pen.write("Score: 0  High Score: 0", align="center", font=("Courier", 24, "normal"))
 
-
 # Functions
 def go_up():
     if head.direction != "down":
@@ -162,7 +161,7 @@ while True:
         if segment.distance(head) < 20:
             time.sleep(1)
             head.goto(0,0)
-            head.direction = "stop"
+            head.direction = "stop"  
         
             # Hide the segments
             for segment in segments:

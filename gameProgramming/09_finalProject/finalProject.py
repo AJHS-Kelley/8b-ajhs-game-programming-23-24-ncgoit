@@ -80,3 +80,37 @@ def move():
     if head.direction == "right":
         x = head.xcor()
         head.setx(x + 20)
+
+
+# Keyboard bindings
+wn.listen()
+wn.onkeypress(go_up, "w")
+wn.onkeypress(go_down, "s")
+wn.onkeypress(go_left, "a")
+wn.onkeypress(go_right, "d")
+
+# Main game loop
+while True:
+    wn.update()
+
+    # Check for a collision with the border
+    if head.xcor()>340 or head.xcor()<-340 or head.ycor()>340 or head.ycor()<-340:
+        time.sleep(1)
+        head.goto(0,0)
+        head.direction = "stop"
+
+        # Hide the segments
+        for segment in segments:
+            segment.goto(1000, 1000)
+        
+        # Clear the segments list
+        segments.clear()
+
+        # Reset the score
+        score = 0
+
+        # Reset the delay
+        delay = 0.1
+
+        pen.clear()
+        pen.write("Score: {}  High Score: {}".format(score, high_score), align="center", font=("Courier", 24, "normal")) 
