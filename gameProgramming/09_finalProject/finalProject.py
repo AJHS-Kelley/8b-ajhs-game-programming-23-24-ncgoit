@@ -1,7 +1,10 @@
 # Snake Game, Nevaeh Copeland v0.1
-import turtle
-import time
-import random
+import turtle, time, random 
+
+
+# Difficulty Levels -- Timed Food Challenge 
+# Fix the collisions so that the snake doesn't pick-up the food without actually touching it. 
+
 
 delay = 0.1
 
