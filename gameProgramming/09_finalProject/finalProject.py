@@ -16,7 +16,7 @@ high_score = 0
 wn = turtle.Screen()
 wn.title("Snake Game")
 wn.bgcolor("green")
-wn.setup(width=800, height=750)
+wn.setup(width=800, height=800)
 wn.tracer(0) # Turns off the screen updates
 
 # Snake head
@@ -33,10 +33,24 @@ food = turtle.Turtle()
 food.speed(0)
 food.shape("circle")
 food.color("red")
+food.shapesize(0.8)
 food.penup()
 food.goto(0,100)
-
 segments = []
+
+# # Calculate grid size
+# screen_width = 800
+# screen_height = 800
+# grid_size = 20
+# grid_width = screen_width // grid_size
+# grid_height = screen_height // grid_size
+
+# # Generate random grid coordinates for the food
+# food_x = random.randint(-grid_width// 2 + 1, grid_width // 2 - 1) * grid_size
+# food_y = random.randint(-grid_height // 2 + 1, grid_height // 2 - 1) * grid_size
+
+# # Adjust the food position to the grid coordinates
+# food.goto(food_x,food_y)
 
 # Pen
 pen = turtle.Turtle()
@@ -119,7 +133,7 @@ while True:
         pen.write("Score: {}  High Score: {}".format(score, high_score), align="center", font=("Courier", 24, "normal"))
 
     # Check for a collision with the food
-    if head.distance(food) < 20:
+    if head.distance(food) < 15:
         # Move the food to a random spot
         x = random.randint(-290, 290)
         y = random.randint(-290, 290)
