@@ -38,9 +38,9 @@ grid_height = screen_height // grid_size
 # Snake food
 food = turtle.Turtle()
 food.speed(0)
-food.shape("circle")
+food.shape("square")
 food.color("red")
-food.shapesize(0.8)
+food.shapesize(1)
 food.penup()
 # Generate random grid coordinates for the food
 food_x = random.randint(-grid_width// 2 + 1, grid_width // 2 - 1) * grid_size
