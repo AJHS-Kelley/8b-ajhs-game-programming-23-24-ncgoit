@@ -42,6 +42,7 @@ food.shape("square")
 food.color("red")
 food.shapesize(1)
 food.penup()
+
 # Generate random grid coordinates for the food
 food_x = random.randint(-grid_width// 2 + 1, grid_width // 2 - 1) * grid_size
 food_y = random.randint(-grid_height // 2 + 1, grid_height // 2 - 1) * grid_size
@@ -189,7 +190,7 @@ while True:
 
 
             # Reset the score
-            score = 0
+            score = 
 
 
             # Reset the delay
