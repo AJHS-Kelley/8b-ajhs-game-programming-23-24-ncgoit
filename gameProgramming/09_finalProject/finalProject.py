@@ -190,7 +190,7 @@ while True:
 
 
             # Reset the score
-            score = 
+            score = 0
 
 
             # Reset the delay
