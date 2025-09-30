@@ -107,6 +107,7 @@ wn.onkeypress(go_right, "d")
 # Main game loop
 while True:
     wn.update()
+    print("Game Loop running")
 
     # Check for a collision with the border
     if head.xcor()>375 or head.xcor()<-375 or head.ycor()>375 or head.ycor()<-375:
