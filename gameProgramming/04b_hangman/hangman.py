@@ -8,7 +8,8 @@ import random
 words = {'Colors': 'red orange yellow green blue indigo violet fuschia teal garnet gold black white silver gold'.split(),
          'Animals': 'cat cow dog moose goose fish wombat wolverine giraffe hippoptamus lion alligater'.split(),
          'Shapes': 'square triangle circle rhombus parallelogram trapezoid diamond dodecahedron'.split(),
-         'Foods': 'hamburger hotdog potato waffle pancake escargot oysters chips steak'.split()}
+         'Foods': 'hamburger hotdog potato waffle pancake escargot oysters chips steak'.split(),
+         'Artist': 'drake giveon brent nicki minaj chris brown'.split()}
 
 HANGMAN_BOARD = ['''
     +---+
