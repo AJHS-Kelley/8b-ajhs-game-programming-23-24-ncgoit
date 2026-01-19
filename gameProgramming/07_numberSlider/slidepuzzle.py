@@ -1,7 +1,6 @@
 # Slide Puzzle
-# By Al Sweigart al@inventwithpython.com
-# http://inventwithpython.com/pygame
-# Released under a "Simplified BSD" license
+# Version 2.3
+# Last update: Jan 18th, 2026
 
 import pygame, sys, random
 from pygame.locals import *
